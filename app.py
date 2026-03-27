@@ -134,7 +134,7 @@ elif page == "Lead Predictor":
     st.title("📥 New Lead Scoring")
     st.write("Upload a CSV with new lead data to predict their inclination toward your business.")
     
-    uploaded_file = st.file_upload("Upload Leads CSV", type="csv")
+    uploaded_file = st.file_uploader("Upload Leads CSV", type="csv")
     if uploaded_file:
         new_df = pd.read_csv(uploaded_file)
         st.write("Preview of Uploaded Data:")
